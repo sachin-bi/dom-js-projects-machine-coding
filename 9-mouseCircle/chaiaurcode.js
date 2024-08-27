@@ -13,15 +13,13 @@ const colors = [
   '#B34D4D',
 ];
 // add circle to cursor and change it's color as cursor moves on the screen. Pick color from these array
-document.addEventListener('mousemove', function (event) {
-  moveCursor(event.pageX, event.pageY);
-});
 
-const moveCursor = function (pageX, pageY) {
-  cursor.style.left = pageX + 'px';
-  cursor.style.top = pageY + 'px';
+document.addEventListener("mousemove", (e) => {
+  move(e.pageX, e.pageY);
+})
+const move = function (pageX, pageY) {
+  cursor.style.top = `${pageY}px`
+  cursor.style.left = `${pageX}px`
+  cursor.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
 
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-  cursor.style.backgroundColor = randomColor;
-};
+}

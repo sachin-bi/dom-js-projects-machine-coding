@@ -45,12 +45,15 @@ button {
 /* JavaScript */
 div.cursor {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 41.5%;
+  left: 50.8%;
   width: 25px;
   height: 25px;
   background: yellow;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+
+  /* shifting wrt. own position */
+  transform: translate(-50%, -50%); 
+  
   animation: cursor 6s infinite alternate;
 }
