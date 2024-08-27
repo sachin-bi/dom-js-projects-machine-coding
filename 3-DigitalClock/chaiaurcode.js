@@ -27,6 +27,3 @@ frezz.addEventListener("click",()=>{
     console.log('clock frezz.!');
     clearInterval(myInterval);    
 })
-// function myStop() {
-//     clearInterval(myInterval);
-//   }
