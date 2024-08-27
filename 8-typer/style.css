@@ -27,5 +27,6 @@ p {
 }
 
 .cursor {
+  width: 2px;
   background: #dbe912;
 }
