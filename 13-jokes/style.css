@@ -9,6 +9,7 @@ body {
 }
 
 #display-joke {
+  margin-top: 25%;
   font-size: 22px;
   font-family: 'Playfair Display', serif;
 }
